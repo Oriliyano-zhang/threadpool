@@ -1,5 +1,5 @@
 # A-Simple-C-Thread-Pool
-功能实现
+Introduction
 
 1、线程池中的线程分为管理线程、工作线程
 
