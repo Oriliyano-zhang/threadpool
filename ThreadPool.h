@@ -1,5 +1,5 @@
-#ifndef __PTHREADPOOL_H_
-#define __PTHREADPOOL_H_
+#ifndef __THREADPOOL_H_
+#define __THREADPOOL_H_
 
 typedef struct threadpool_t threadpool_t;
 
