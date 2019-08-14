@@ -6,7 +6,7 @@
 #include <string.h>
 #include <signal.h>
 #include <errno.h>
-#include "threadpool.h"
+#include "ThreadPool.h"
 
 #define DEFAULT_TIME 10                 /*10s检测一次*/
 #define MIN_WAIT_TASK_NUM 10            /*如果queue_size > MIN_WAIT_TASK_NUM 添加新的线程到线程池*/ 
@@ -310,7 +310,7 @@ int is_thread_alive(pthread_t tid)
 }
 
 /*测试*/
-#if 0
+#if 1
 void *process(void *arg)
 {
     printf("thread 0x%x working on task %d\n ",(unsigned int)pthread_self(),*(int *)arg);
