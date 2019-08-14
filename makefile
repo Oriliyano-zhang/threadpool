@@ -1,14 +1,13 @@
-src = $(wildcard *.c)
-targets = $(patsubst %.c, %, $(src))
+SrcFiles=$(wildcard *.c)
+ObjFiles=$(patsubst %.c,%.o,$(SrcFiles))                                                                                       
 
-CFLAGS = -lpthread -Wall -g 
-
-all:$(targets)
-
-$(targets):%:%.c
-	gcc $< -o $@ $(CFLAGS)
+example:$(ObjFiles)
+	gcc -o example $(ObjFiles) -lpthread -Wall -g 
+	
+%.o:%.c
+	gcc -c $< -o $@
 
 .PHONY:clean all
 clean:
-	-rm -rf $(targets) 
+	-rm -rf $(ObjFiles) 
 
