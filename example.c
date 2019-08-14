@@ -4,8 +4,8 @@
 #include <unistd.h>
 #include <pthread.h>
 
+/*测试*/
 #if 1              
-
 void *process(void *arg)
 {
     printf("thread 0x%x working on task %d\n ",(unsigned int)pthread_self(),*(int *)arg);
