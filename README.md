@@ -1,4 +1,4 @@
-# A-Simple-C-Thread-Pool
+# A-Smart-C-Thread-Pool
 
 Introduction
 --------------
