@@ -1,3 +1,2 @@
-it is a test word
+it is master
 
-it is master change
